@@ -1,6 +1,8 @@
+<p align="center"><img src="images/DahuaTV-glitch-anime.png" alt="Logo original Dahua TV" width="420"></p>
+
 # Installer et configurer Dahua TV
 
-Ce guide accompagne la première installation sur Android TV ou Fire TV Stick, puis le réglage du visiophone et des caméras. Prévoyez la télécommande, une connexion au même réseau local que le portier et le NVR, ainsi que les paramètres de votre propre installation Dahua.
+Ce guide accompagne la première installation sur Android TV ou Fire TV Stick, puis le réglage du visiophone et des caméras. Prévoyez la télécommande, une connexion au même réseau local que le visiophone et le NVR, ainsi que les paramètres de votre propre installation Dahua.
 
 [Retour à l'accueil](README.md) · [Télécharger `DahuaTV.apk`](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk) · [Compatibilité](COMPATIBILITE.md)
 
@@ -20,28 +22,47 @@ Les libellés varient selon le constructeur et la version d'Android TV.
 4. Une fois le téléchargement terminé, choisissez **Installer**, puis **Ouvrir**. Si Android bloque l'installation, revenez à l'étape 2 et vérifiez l'autorisation de l'application qui a lancé l'installation.
 5. Retrouvez ensuite **Dahua TV** dans les applications de la TV. Si une autorisation de notification est proposée, accordez-la pour recevoir les alertes lorsque la fenêtre ne peut pas s'afficher.
 
-## 3. Installer sur Fire TV Stick
+## 3. Installer sur Fire TV Stick avec Downloader
 
-1. Dans l'**Appstore Amazon**, recherchez **Downloader** et installez-le.
-2. Ouvrez **Paramètres > Ma Fire TV > Options pour les développeurs > Installer des applications inconnues**, puis autorisez **Downloader**. Selon la version de Fire OS, l'entrée peut se trouver dans **Applications** ou s'appeler **Applications de sources inconnues**. Si **Options pour les développeurs** n'apparaît pas, ouvrez **Ma Fire TV > À propos**, sélectionnez le nom de l'appareil plusieurs fois, puis revenez à l'écran précédent.
-3. Ouvrez Downloader et saisissez le code ci-dessous dans son champ de recherche :
+**Downloader** est l'application qui télécharge puis ouvre l'APK sur le Fire TV Stick. Comptez quelques minutes pour la première installation. Vous utiliserez seulement la télécommande et le code **5492774**.
 
-   ```text
-   5492774
-   ```
+### Étape 1 — Installer Downloader
 
-   Validez avec **Go / Aller**. Vérifiez que la page obtenue mène bien au fichier `DahuaTV.apk` de la [dernière release de ce dépôt](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk).
-4. Sélectionnez **Télécharger**, puis **Installer** quand Fire TV le propose. Ouvrez Dahua TV depuis la bibliothèque d'applications.
+Depuis l'accueil Fire TV, ouvrez l'**Appstore Amazon**. Recherchez **Downloader**, installez-le, puis revenez aux paramètres du Fire TV Stick. Si Downloader est déjà installé, passez à l'étape suivante.
 
-L'adresse directe est `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Si le code Downloader ne donne pas le bon fichier, saisissez cette adresse directement. Fire OS doit être une version qui accepte les APK Android ; un appareil sous Vega OS ne convient pas.
+### Étape 2 — Autoriser Downloader à installer l'APK
 
-Après la configuration, voici la fenêtre réelle d'un appel sur le Fire TV Stick testé ; la vue du portier est floutée.
+Ouvrez **Paramètres > Ma Fire TV > Options pour les développeurs > Installer des applications inconnues**, puis activez l'autorisation pour **Downloader**. Selon la version de Fire OS, l'entrée peut se trouver dans **Applications** ou s'appeler **Applications de sources inconnues**. Si **Options pour les développeurs** n'apparaît pas, ouvrez **Ma Fire TV > À propos**, sélectionnez le nom de l'appareil plusieurs fois, puis revenez à l'écran précédent.
+
+Cette autorisation concerne **Downloader**, car c'est lui qui ouvrira le fichier téléchargé. Si Fire TV refuse ensuite l'installation, revenez ici et vérifiez que Downloader figure bien parmi les applications autorisées.
+
+### Étape 3 — Saisir le code Downloader
+
+Ouvrez Downloader. Placez-vous dans son champ de recherche, entrez le code ci-dessous avec la télécommande, puis validez avec **Go / Aller**.
+
+```text
+5492774
+```
+
+Le code doit mener au fichier **`DahuaTV.apk`** de la [dernière release du dépôt `crashcool69/Dahua-TV`](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk). Prenez un instant pour vérifier le nom du fichier et le dépôt avant de poursuivre. Si le code n'ouvre pas la bonne page, saisissez l'adresse directe indiquée ci-dessous.
+
+### Étape 4 — Télécharger et installer Dahua TV
+
+Laissez Downloader terminer le téléchargement. Lorsque Fire TV affiche l'écran d'installation, choisissez **Installer**. Attendez le message de fin, puis choisissez **Ouvrir** pour lancer Dahua TV. Vous la retrouverez ensuite dans la bibliothèque d'applications du Fire TV Stick.
+
+Si Downloader revient sur son écran après l'installation, vous pouvez supprimer le fichier APK téléchargé dans Downloader pour libérer de la place : cela ne désinstalle pas Dahua TV.
+
+**Adresse directe, si nécessaire :** `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Fire OS doit être une version qui accepte les APK Android ; un appareil sous Vega OS ne convient pas.
+
+### Étape 5 — Vérifier le résultat
+
+Au premier lancement, suivez les sections 4 à 8 ci-dessous pour régler le visiophone, la vidéo et la fenêtre d'appel. Faites ensuite un appel réel depuis le VTO. Voici le résultat sur le Fire TV Stick testé, **après installation et configuration** ; la vue du visiophone est floutée. Cette image montre Dahua TV en fonctionnement, pas l'interface de Downloader.
 
 ![Fenêtre d'appel réelle sur Fire TV Stick, vue privée floutée](images/fire-tv-appel-4s-floute.png)
 
-## 4. Renseigner le portier : SIP, VTO et VTH
+## 4. Renseigner le visiophone : SIP, VTO et VTH
 
-Ouvrez **Dahua TV > Paramètres > Connexion SIP**. Le **VTO** est le portier extérieur ; le **VTH** est le moniteur intérieur. Dahua TV utilise un compte SIP adapté à cette installation pour repérer les appels. Relevez les valeurs dans la configuration de votre équipement : ne copiez pas l'adresse ou le compte d'une autre installation.
+Ouvrez **Dahua TV > Paramètres > Connexion SIP**. Le **VTO** est le visiophone extérieur ; le **VTH** est le moniteur intérieur. Dahua TV utilise un compte SIP adapté à cette installation pour repérer les appels. Relevez les valeurs dans la configuration de votre équipement : ne copiez pas l'adresse ou le compte d'une autre installation.
 
 | Champ | Valeur à saisir |
 | --- | --- |
@@ -51,19 +72,19 @@ Ouvrez **Dahua TV > Paramètres > Connexion SIP**. Le **VTO** est le portier ext
 | Compte | Compte SIP attribué à Dahua TV ; utilisez un compte distinct si votre équipement le permet. |
 | Mot de passe SIP | Mot de passe de ce compte, saisi directement sur la TV. |
 
-Sélectionnez **Enregistrer et relancer**. L'état attendu est **« SIP : enregistré sur … »**. Faites ensuite sonner le VTO et vérifiez que l'appel apparaît sur la TV. Un VTH ou un autre client SIP utilisant le même compte peut capter l'appel à la place de Dahua TV : si cela arrive, vérifiez les comptes et les limites de sessions de votre portier.
+Sélectionnez **Enregistrer et relancer**. L'état attendu est **« SIP : enregistré sur … »**. Faites ensuite sonner le VTO et vérifiez que l'appel apparaît sur la TV. Un VTH ou un autre client SIP utilisant le même compte peut capter l'appel à la place de Dahua TV : si cela arrive, vérifiez les comptes et les limites de sessions de votre visiophone.
 
 ## 5. Renseigner la vidéo RTSP du VTO
 
-Dans **Paramètres > Flux du portier**, renseignez l'adresse RTSP et les identifiants vidéo. Le bouton **Préparer l'adresse Dahua** construit une adresse du type :
+Dans **Paramètres > Vidéo**, renseignez l'adresse RTSP et les identifiants vidéo du visiophone. Le bouton **Préparer l'adresse Dahua** construit une adresse du type :
 
 ```text
 rtsp://ADRESSE_DU_VTO:554/cam/realmonitor?channel=1&subtype=0
 ```
 
-Remplacez l'adresse et, si nécessaire, le port, le canal ou le sous-flux suivant la configuration de votre VTO. Le compte vidéo peut être différent du compte SIP. Saisissez **Utilisateur vidéo** et **Mot de passe vidéo**, puis choisissez **Enregistrer et relancer**. Revenez à l'accueil et ouvrez le direct du portier pour contrôler l'image. Si elle reste noire, vérifiez d'abord l'adresse, les identifiants, le réseau local et le nombre de sessions RTSP déjà utilisées.
+Remplacez l'adresse et, si nécessaire, le port, le canal ou le sous-flux suivant la configuration de votre VTO. Le compte vidéo peut être différent du compte SIP. Saisissez **Utilisateur vidéo** et **Mot de passe vidéo**, puis choisissez **Enregistrer et relancer**. Revenez à l'accueil et ouvrez le direct du visiophone pour contrôler l'image. Si elle reste noire, vérifiez d'abord l'adresse, les identifiants, le réseau local et le nombre de sessions RTSP déjà utilisées.
 
-![Accueil réel de Dahua TV après configuration du portier, zones privées floutées](images/accueil-floute.png)
+![Accueil réel de Dahua TV après configuration du visiophone, zones privées floutées](images/accueil-floute.png)
 
 ## 6. Autoriser et régler la fenêtre d'appel
 
@@ -83,7 +104,7 @@ La grille de **quatre caméras** et le NVR ont été confirmés sur le Fire TV S
 
 ## 8. Audio et ouverture de porte
 
-Pour le son, vérifiez le volume de la TV et la piste audio du flux vidéo de votre portier. Le bouton **Tester le micro**, lorsqu'il est présent, vérifie seulement qu'une entrée audio est accessible à l'application : il ne constitue pas un test d'interphonie. La possibilité d'entendre le visiteur ou de lui parler dépend de la version, du flux et du matériel. Ne présumez pas qu'une conversation bidirectionnelle fonctionne avant un essai réel.
+Pour le son, vérifiez le volume de la TV et la piste audio du flux vidéo de votre visiophone. Le bouton **Tester le micro**, lorsqu'il est présent, vérifie seulement qu'une entrée audio est accessible à l'application : il ne constitue pas un test d'interphonie. La possibilité d'entendre le visiteur ou de lui parler dépend de la version, du flux et du matériel. Ne présumez pas qu'une conversation bidirectionnelle fonctionne avant un essai réel.
 
 Si votre installation propose **Ouvrir la porte**, configurez les identifiants vidéo nécessaires sur la TV et testez cette commande devant le portail. Ne publiez jamais ces identifiants dans un rapport ou une capture.
 

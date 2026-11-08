@@ -4,7 +4,7 @@
 
 **Le visiophone et les caméras Dahua sur votre télévision.** Dahua TV reçoit les appels du portier, affiche sa vidéo dans une fenêtre sur l'écran et permet de consulter les caméras du NVR à la télécommande. L'application fonctionne sur le réseau local, sans service cloud obligatoire.
 
-[Télécharger le dernier APK](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk) · [Lire le guide d'installation](INSTALLATION.md) · [Voir la compatibilité](COMPATIBILITE.md)
+[Installer avec Downloader](#installer-avec-downloader-sur-fire-tv-stick) · [Télécharger le dernier APK](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk) · [Lire le guide d'installation](INSTALLATION.md) · [Voir la compatibilité](COMPATIBILITE.md)
 
 ## Découvrir l'application
 
@@ -34,19 +34,30 @@ Les réglages couvrent le compte SIP du portier, le flux RTSP, les identifiants 
 
 ## Installer Dahua TV
 
-### Fire TV Stick : installation avec Downloader
+### Installer avec Downloader sur Fire TV Stick
 
-1. Installez **Downloader** depuis l'Appstore Amazon.
-2. Dans les paramètres du Fire TV Stick, **autorisez Downloader à installer des applications de source inconnue**.
-3. Ouvrez Downloader et saisissez ce code :
+Vous n'avez pas besoin de recopier une longue adresse avec la télécommande. **Downloader** permet de récupérer l'APK de Dahua TV à l'aide d'un code court.
+
+| Étape | Sur votre Fire TV Stick |
+| --- | --- |
+| 1. Préparer | Dans l'**Appstore Amazon**, cherchez **Downloader** et installez l'application. |
+| 2. Autoriser | Dans les paramètres Fire TV, ouvrez **Ma Fire TV > Options pour les développeurs > Installer des applications inconnues** et autorisez **Downloader**. Le nom des menus peut varier selon Fire OS. |
+| 3. Télécharger | Lancez Downloader, saisissez le code ci-dessous dans la zone de recherche et validez avec **Go / Aller**. |
+| 4. Installer | Vérifiez que le fichier proposé est **`DahuaTV.apk`** et qu'il vient de ce dépôt GitHub. Une fois téléchargé, choisissez **Installer**, puis **Ouvrir**. |
+
+**Code Downloader pour Dahua TV**
 
 ```text
 5492774
 ```
 
-4. Téléchargez **`DahuaTV.apk`**, puis choisissez **Installer**.
+Le téléchargement doit mener à la [dernière version de `DahuaTV.apk`](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk). Si le code n'ouvre pas le bon fichier, saisissez cette adresse directement dans Downloader. Au premier lancement, renseignez vos paramètres SIP et RTSP dans Dahua TV, puis testez un appel du portier.
 
-Vous pouvez aussi ouvrir directement [le dernier APK](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk) dans Downloader. Sur Android TV, il faut également autoriser l'application qui ouvre l'APK à installer des applications de source inconnue. Le [tutoriel illustré](INSTALLATION.md) détaille les deux parcours et la configuration du portier et des caméras.
+La capture ci-dessous montre le résultat **après installation et configuration** : la fenêtre Dahua TV apparaît au-dessus de l'accueil Fire TV. La vue privée du portier est floutée.
+
+![Fenêtre Dahua TV sur Fire TV Stick après installation, vue du portier floutée](images/fire-tv-appel-4s-floute.png)
+
+Sur Android TV, il faut également autoriser l'application qui ouvre l'APK à installer des applications de source inconnue. Le [tutoriel illustré](INSTALLATION.md) détaille les deux parcours, les menus possibles et la configuration du portier et des caméras.
 
 ## Compatibilité et limites
 
