@@ -74,6 +74,10 @@ Au premier lancement, suivez les sections 4 à 8 ci-dessous pour régler le visi
 
 ![Fenêtre d'appel réelle sur Fire TV Stick, vue privée floutée](images/fire-tv-appel-4s-floute.png)
 
+## Choisir la langue
+
+Dans les paramètres de Dahua TV, laissez le réglage de langue sur **Auto** pour que l'application utilise la langue de votre TV. Si vous préférez choisir vous-même, sélectionnez 🇫🇷 **Français** ou 🇬🇧 **English**. Ce choix concerne l'interface de Dahua TV, sur Android TV comme sur Fire TV Stick.
+
 ## 4. Renseigner le visiophone : SIP, VTO et VTH
 
 Ouvrez **Dahua TV > Paramètres > Connexion SIP**. Le **VTO** est le visiophone extérieur. Le **VTH** est le moniteur intérieur. Dahua TV utilise un compte SIP adapté à cette installation pour repérer les appels. Relevez les valeurs dans la configuration de votre équipement : ne copiez pas l'adresse ou le compte d'une autre installation.

@@ -22,6 +22,8 @@ Sur le Fire TV Stick testé, la fenêtre d'appel reste visible au-dessus de l'ac
 
 Les réglages couvrent le compte SIP du visiophone, le flux RTSP, les identifiants vidéo, la fenêtre d'appel et les canaux du NVR. Le panneau **Vidéo et diagnostics** permet de préparer l'adresse Dahua et de tester la fenêtre, la détection Frigate, l'accès à la commande de porte et le micro. [Le guide explique chaque bouton avec les captures réelles des paramètres](INSTALLATION.md#video-et-diagnostics). Les données de votre installation se saisissent **sur votre appareil** : aucune adresse, aucun identifiant et aucun mot de passe personnel ne sont nécessaires dans ce dépôt.
 
+Dahua TV est disponible en 🇫🇷 **français** et en 🇬🇧 **anglais**. Si le réglage de langue reste sur **Auto**, l'application suit la langue de la TV. Vous pouvez aussi choisir vous-même la langue dans les paramètres.
+
 ## Matériel et fonctions
 
 | Fonction | Ce qu'elle permet |
