@@ -12,19 +12,33 @@ Ce guide accompagne la première installation sur Android TV ou Fire TV Stick, p
 - Gardez à portée de main l'adresse locale du VTO ou du serveur SIP, le compte SIP et son mot de passe, puis l'adresse RTSP et les identifiants vidéo. Pour le NVR, préparez son adresse, son port RTSP, un compte autorisé et les numéros des canaux.
 - Téléchargez uniquement l'APK publié dans la [dernière release du dépôt](https://github.com/crashcool69/Dahua-TV/releases/latest). Le fichier attendu se nomme **`DahuaTV.apk`**.
 
-## 2. Installer sur Android TV
+## 2. Installer sur Android TV avec Downloader
 
-Les libellés varient selon le constructeur et la version d'Android TV.
+**Downloader** est disponible sur Android TV également. Voici son icône officielle, orange avec un « D » blanc et une flèche, pour le reconnaître dans le Play Store. Son éditeur est **AFTVnews**.
 
-1. Sur la TV, installez depuis le Play Store une application capable de télécharger ou d'ouvrir l'APK, par exemple Downloader, ou utilisez un gestionnaire de fichiers si vous avez copié l'APK sur une clé USB.
-2. Ouvrez **Paramètres > Applications > Accès spécial aux applications > Installer des applications inconnues**. Sur certains appareils, le chemin passe par **Sécurité et restrictions > Sources inconnues**. Autorisez **l'application qui ouvrira l'APK** : Downloader, le navigateur ou le gestionnaire de fichiers choisi. L'autorisation s'applique à cette application, pas à Dahua TV.
-3. Dans Downloader ou le navigateur de la TV, ouvrez `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Si vous utilisez une clé USB, ouvrez le fichier `DahuaTV.apk` depuis le gestionnaire de fichiers autorisé.
+<img src="images/downloader-officiel.webp" alt="Icône officielle de Downloader par AFTVnews" width="100">
+
+[Fiche officielle de Downloader sur Google Play](https://play.google.com/store/apps/details?id=com.esaba.downloader)
+
+Les libellés des paramètres varient selon le constructeur et la version d'Android TV.
+
+1. Sur la TV, ouvrez le **Play Store**, recherchez **Downloader** et installez l'application d'AFTVnews, reconnaissable à l'icône ci-dessus.
+2. Ouvrez **Paramètres > Applications > Accès spécial aux applications > Installer des applications inconnues**. Sur certains appareils, le chemin passe par **Sécurité et restrictions > Sources inconnues**. Autorisez **Downloader**. L'autorisation s'applique à l'application qui ouvre l'APK, pas à Dahua TV.
+3. Lancez Downloader et sélectionnez son champ de saisie. Entrez le **code 5492774** avec la télécommande, puis choisissez **Go / Aller**. Le code doit mener à **`DahuaTV.apk`** dans la dernière release de `crashcool69/Dahua-TV`. Vérifiez le nom du fichier et le dépôt avant de poursuivre.
+
+   ```text
+   5492774
+   ```
 4. Une fois le téléchargement terminé, choisissez **Installer**, puis **Ouvrir**. Si Android bloque l'installation, revenez à l'étape 2 et vérifiez l'autorisation de l'application qui a lancé l'installation.
 5. Retrouvez ensuite **Dahua TV** dans les applications de la TV. Si une autorisation de notification est proposée, accordez-la pour recevoir les alertes lorsque la fenêtre ne peut pas s'afficher.
 
+Si le code ne mène pas au bon fichier, saisissez directement dans Downloader l'adresse `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Vous pouvez aussi copier cet APK sur une clé USB et l'ouvrir avec un gestionnaire de fichiers ; autorisez alors **ce gestionnaire** dans les paramètres de sources inconnues. La capture ci-dessous montre Dahua TV **après installation et configuration** sur Android TV ; les zones privées sont floutées.
+
+![Accueil réel de Dahua TV sur Android TV, zones privées floutées](images/accueil-floute.png)
+
 ## 3. Installer sur Fire TV Stick avec Downloader
 
-**Downloader** est l'application qui télécharge puis ouvre l'APK sur le Fire TV Stick. Comptez quelques minutes pour la première installation. Vous utiliserez seulement la télécommande et le code **5492774**.
+Il s'agit de la **même application Downloader** que dans la section Android TV : cherchez son icône orange affichée plus haut et l'éditeur **AFTVnews**. Comptez quelques minutes pour la première installation. Vous utiliserez seulement la télécommande et le code **5492774**.
 
 ### Étape 1 — Installer Downloader
 
@@ -44,13 +58,13 @@ Ouvrez Downloader. Placez-vous dans son champ de recherche, entrez le code ci-de
 5492774
 ```
 
-Le code doit mener au fichier **`DahuaTV.apk`** de la [dernière release du dépôt `crashcool69/Dahua-TV`](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk). Prenez un instant pour vérifier le nom du fichier et le dépôt avant de poursuivre. Si le code n'ouvre pas la bonne page, saisissez l'adresse directe indiquée ci-dessous.
+Sur **Android TV comme sur Fire TV**, le code doit mener au fichier **`DahuaTV.apk`** de la [dernière release du dépôt `crashcool69/Dahua-TV`](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk). Prenez un instant pour vérifier le nom du fichier et le dépôt avant de poursuivre. Si le code n'ouvre pas la bonne page, saisissez l'adresse directe indiquée ci-dessous.
 
 ### Étape 4 — Télécharger et installer Dahua TV
 
 Laissez Downloader terminer le téléchargement. Lorsque Fire TV affiche l'écran d'installation, choisissez **Installer**. Attendez le message de fin, puis choisissez **Ouvrir** pour lancer Dahua TV. Vous la retrouverez ensuite dans la bibliothèque d'applications du Fire TV Stick.
 
-Si Downloader revient sur son écran après l'installation, vous pouvez supprimer le fichier APK téléchargé dans Downloader pour libérer de la place : cela ne désinstalle pas Dahua TV.
+Si Downloader revient sur son écran après l'installation, vous pouvez supprimer le fichier APK téléchargé dans Downloader pour libérer de la place : cela ne désinstalle pas Dahua TV. Cette étape vaut également pour Android TV.
 
 **Adresse directe, si nécessaire :** `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Fire OS doit être une version qui accepte les APK Android ; un appareil sous Vega OS ne convient pas.
 
@@ -110,7 +124,7 @@ Si votre installation propose **Ouvrir la porte**, configurez les identifiants v
 
 ## 9. Mettre à jour et résoudre les problèmes courants
 
-Pour une mise à jour, ouvrez de nouveau le [lien de la dernière release](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk), ou reprenez le code Downloader **5492774** sur Fire TV. Installez le nouvel APK par-dessus la version existante. Ne désinstallez pas l'application si vous souhaitez conserver ses réglages ; une mise à jour conserve normalement les données lorsque la signature de l'APK reste identique.
+Pour une mise à jour, ouvrez de nouveau le [lien de la dernière release](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk), ou reprenez le code Downloader **5492774** sur **Android TV ou Fire TV**. Installez le nouvel APK par-dessus la version existante. Ne désinstallez pas l'application si vous souhaitez conserver ses réglages ; une mise à jour conserve normalement les données lorsque la signature de l'APK reste identique.
 
 | Symptôme | Vérification utile |
 | --- | --- |
@@ -121,4 +135,5 @@ Pour une mise à jour, ouvrez de nouveau le [lien de la dernière release](https
 | Fenêtre absente | Accordez la superposition à Dahua TV, puis utilisez **Tester la fenêtre** et un appel réel. |
 | Grille saccadée | Essayez un seul canal et un profil vidéo moins exigeant sur le NVR. |
 
-Les essais détaillés et les limites de compatibilité figurent dans [COMPATIBILITE.md](COMPATIBILITE.md). Toutes les illustrations de ce guide sont des captures réelles déjà floutées ; elles ne montrent aucune donnée privée lisible.
+Les essais détaillés et les limites de compatibilité figurent dans [COMPATIBILITE.md](COMPATIBILITE.md). Les captures de Dahua TV de ce guide sont réelles et déjà floutées ; elles ne montrent aucune donnée privée lisible. L'icône de Downloader provient de sa fiche officielle.
+
