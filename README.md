@@ -20,7 +20,7 @@ Sur le Fire TV Stick testé, la fenêtre d'appel reste visible au-dessus de l'ac
 
 ![Capture réelle de la fenêtre d'appel sur Fire TV Stick, vue du visiophone floutée](images/fire-tv-appel-floute.png)
 
-Les réglages couvrent le compte SIP du visiophone, le flux RTSP, les identifiants vidéo, la fenêtre d'appel et les canaux du NVR. Un bouton permet aussi de tester l'affichage de la fenêtre. Les données de votre installation se saisissent **sur votre appareil** : aucune adresse, aucun identifiant et aucun mot de passe personnel ne sont nécessaires dans ce dépôt.
+Les réglages couvrent le compte SIP du visiophone, le flux RTSP, les identifiants vidéo, la fenêtre d'appel et les canaux du NVR. Le panneau **Vidéo et diagnostics** permet de préparer l'adresse Dahua et de tester la fenêtre, la détection Frigate, l'accès à la commande de porte et le micro. [Le guide explique chaque bouton avec les captures réelles des paramètres](INSTALLATION.md#video-et-diagnostics). Les données de votre installation se saisissent **sur votre appareil** : aucune adresse, aucun identifiant et aucun mot de passe personnel ne sont nécessaires dans ce dépôt.
 
 ## Matériel et fonctions
 
@@ -29,7 +29,7 @@ Les réglages couvrent le compte SIP du visiophone, le flux RTSP, les identifian
 | VTO / VTH Dahua | Recevoir le signal d'appel du visiophone via un compte SIP adapté à votre installation. |
 | Vidéo RTSP | Voir le direct du visiophone, puis la fenêtre d'appel si la superposition est autorisée. |
 | NVR | Consulter les caméras et la grille de quatre flux sur les appareils vérifiés. |
-| Frigate | Reprendre les flux RTSP du NVR utilisés dans une installation Frigate ; les éventuelles fonctions de détection dépendent de la version et de la configuration. |
+| Frigate | Reprendre les flux RTSP du NVR utilisés dans une installation Frigate. Les éventuelles fonctions de détection dépendent de la version et de la configuration. |
 | Télécommande | Parcourir l'accueil, les caméras et les paramètres sans écran tactile. |
 
 ## Installer Dahua TV
@@ -65,8 +65,8 @@ Le [tutoriel illustré](INSTALLATION.md) détaille les deux parcours, les menus 
 
 ## Compatibilité et limites
 
-Le même APK a été vérifié le 8 novembre 2026 sur une **TCL Smart TV Pro sous Android TV 12** et un **Fire TV Stick AFTSS sous Fire OS 7.6.5.2**. Le NVR et la grille de quatre caméras fonctionnent aussi sur ce Fire Stick. Une TV ou un stick doit pouvoir installer des APK Android TV ; un appareil sous Vega OS ne peut pas exécuter cet APK. La fenêtre au-dessus des autres applications dépend des autorisations et du système de l'appareil.
+Le même APK a été vérifié le 8 novembre 2026 sur une **TCL Smart TV Pro sous Android TV 12** et un **Fire TV Stick AFTSS sous Fire OS 7.6.5.2**. Le NVR et la grille de quatre caméras fonctionnent aussi sur ce Fire Stick. Une TV ou un stick doit pouvoir installer des APK Android TV. Un appareil sous Vega OS ne peut pas exécuter cet APK. La fenêtre au-dessus des autres applications dépend des autorisations et du système de l'appareil.
 
-Un visiophone peut limiter le nombre d'enregistrements SIP ou de sessions vidéo simultanés. Si la TV et le stick utilisent le même compte et le même flux, désactivez la surveillance continue sur l'un des deux si les appels ou l'image deviennent instables. La réception audio et la possibilité de parler au visiteur dépendent du flux, du matériel et de la version ; ne comptez pas sur une interphonie bidirectionnelle sans l'avoir testée sur votre installation. Consultez [les essais et limites connus](COMPATIBILITE.md).
+Un visiophone peut limiter le nombre d'enregistrements SIP ou de sessions vidéo simultanés. Si la TV et le stick utilisent le même compte et le même flux, désactivez la surveillance continue sur l'un des deux si les appels ou l'image deviennent instables. La réception audio et la possibilité de parler au visiteur dépendent du flux, du matériel et de la version. Ne comptez pas sur une interphonie bidirectionnelle sans l'avoir testée sur votre installation. Consultez [les essais et limites connus](COMPATIBILITE.md).
 
-Les captures ci-dessus proviennent de l'application réelle. Les zones privées y sont floutées ; aucune interface n'a été recréée pour cette page.
+Les captures ci-dessus proviennent de l'application réelle. Les zones privées y sont floutées. Aucune interface n'a été recréée pour cette page.

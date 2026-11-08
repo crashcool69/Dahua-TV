@@ -32,7 +32,7 @@ Les libellés des paramètres varient selon le constructeur et la version d'Andr
 4. Une fois le téléchargement terminé, choisissez **Installer**, puis **Ouvrir**. Si Android bloque l'installation, revenez à l'étape 2 et vérifiez l'autorisation de l'application qui a lancé l'installation.
 5. Retrouvez ensuite **Dahua TV** dans les applications de la TV. Si une autorisation de notification est proposée, accordez-la pour recevoir les alertes lorsque la fenêtre ne peut pas s'afficher.
 
-Si le code ne mène pas au bon fichier, saisissez directement dans Downloader l'adresse `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Vous pouvez aussi copier cet APK sur une clé USB et l'ouvrir avec un gestionnaire de fichiers ; autorisez alors **ce gestionnaire** dans les paramètres de sources inconnues. La capture ci-dessous montre Dahua TV **après installation et configuration** sur Android TV ; les zones privées sont floutées.
+Si le code ne mène pas au bon fichier, saisissez directement dans Downloader l'adresse `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Vous pouvez aussi copier cet APK sur une clé USB et l'ouvrir avec un gestionnaire de fichiers. Autorisez alors **ce gestionnaire** dans les paramètres de sources inconnues. La capture ci-dessous montre Dahua TV **après installation et configuration** sur Android TV. Les zones privées sont floutées.
 
 ![Accueil réel de Dahua TV sur Android TV, zones privées floutées](images/accueil-floute.png)
 
@@ -66,24 +66,24 @@ Laissez Downloader terminer le téléchargement. Lorsque Fire TV affiche l'écra
 
 Si Downloader revient sur son écran après l'installation, vous pouvez supprimer le fichier APK téléchargé dans Downloader pour libérer de la place : cela ne désinstalle pas Dahua TV. Cette étape vaut également pour Android TV.
 
-**Adresse directe, si nécessaire :** `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Fire OS doit être une version qui accepte les APK Android ; un appareil sous Vega OS ne convient pas.
+**Adresse directe, si nécessaire :** `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Fire OS doit être une version qui accepte les APK Android. Un appareil sous Vega OS ne convient pas.
 
 ### Étape 5 — Vérifier le résultat
 
-Au premier lancement, suivez les sections 4 à 8 ci-dessous pour régler le visiophone, la vidéo et la fenêtre d'appel. Faites ensuite un appel réel depuis le VTO. Voici le résultat sur le Fire TV Stick testé, **après installation et configuration** ; la vue du visiophone est floutée. Cette image montre Dahua TV en fonctionnement, pas l'interface de Downloader.
+Au premier lancement, suivez les sections 4 à 8 ci-dessous pour régler le visiophone, la vidéo et la fenêtre d'appel. Faites ensuite un appel réel depuis le VTO. Voici le résultat sur le Fire TV Stick testé, **après installation et configuration**. La vue du visiophone est floutée. Cette image montre Dahua TV en fonctionnement, pas l'interface de Downloader.
 
 ![Fenêtre d'appel réelle sur Fire TV Stick, vue privée floutée](images/fire-tv-appel-4s-floute.png)
 
 ## 4. Renseigner le visiophone : SIP, VTO et VTH
 
-Ouvrez **Dahua TV > Paramètres > Connexion SIP**. Le **VTO** est le visiophone extérieur ; le **VTH** est le moniteur intérieur. Dahua TV utilise un compte SIP adapté à cette installation pour repérer les appels. Relevez les valeurs dans la configuration de votre équipement : ne copiez pas l'adresse ou le compte d'une autre installation.
+Ouvrez **Dahua TV > Paramètres > Connexion SIP**. Le **VTO** est le visiophone extérieur. Le **VTH** est le moniteur intérieur. Dahua TV utilise un compte SIP adapté à cette installation pour repérer les appels. Relevez les valeurs dans la configuration de votre équipement : ne copiez pas l'adresse ou le compte d'une autre installation.
 
 | Champ | Valeur à saisir |
 | --- | --- |
 | Serveur | Adresse locale du serveur SIP ou du VTO selon votre installation. |
-| Port | Port SIP configuré sur l'équipement ; `5060` est courant pour SIP/UDP. |
+| Port | Port SIP configuré sur l'équipement. `5060` est courant pour SIP/UDP. |
 | Domaine | Domaine SIP déclaré par l'installation Dahua. |
-| Compte | Compte SIP attribué à Dahua TV ; utilisez un compte distinct si votre équipement le permet. |
+| Compte | Compte SIP attribué à Dahua TV. Utilisez un compte distinct si votre équipement le permet. |
 | Mot de passe SIP | Mot de passe de ce compte, saisi directement sur la TV. |
 
 Sélectionnez **Enregistrer et relancer**. L'état attendu est **« SIP : enregistré sur … »**. Faites ensuite sonner le VTO et vérifiez que l'appel apparaît sur la TV. Un VTH ou un autre client SIP utilisant le même compte peut capter l'appel à la place de Dahua TV : si cela arrive, vérifiez les comptes et les limites de sessions de votre visiophone.
@@ -100,17 +100,41 @@ Remplacez l'adresse et, si nécessaire, le port, le canal ou le sous-flux suivan
 
 ![Accueil réel de Dahua TV après configuration du visiophone, zones privées floutées](images/accueil-floute.png)
 
+<a id="video-et-diagnostics"></a>
+
+### Comprendre « Vidéo et diagnostics »
+
+Dans **Paramètres**, le panneau **Outils > Vidéo et diagnostics** rassemble les commandes de préparation et de vérification. Les trois captures ci-dessous montrent l'écran réel de l'application. Les champs contenant des données personnelles ne sont pas visibles.
+
+![Capture réelle des paramètres, début du panneau Vidéo et diagnostics](images/parametres-outils-1.png)
+
+| Bouton | À quoi il sert |
+| --- | --- |
+| **Préparer l'adresse Dahua** | Remplit le champ RTSP avec une adresse Dahua type, à partir de l'adresse du visiophone. Vérifiez le port, le canal et le sous-flux, puis choisissez **Enregistrer et relancer** : préparer l'adresse ne l'enregistre pas à lui seul. |
+| **Autoriser la fenêtre** | Ouvre le réglage Android ou Fire OS qui permet à Dahua TV d'afficher la vidéo par-dessus les autres applications. Accordez l'autorisation sur cet écran système, puis revenez dans Dahua TV. |
+| **Tester la fenêtre** | Affiche une fenêtre d'essai, ou le dernier instantané disponible, sans attendre un appel. Ce test vérifie l'affichage. Faites ensuite un appel réel pour contrôler la réception SIP et la vidéo. |
+| **Tester la détection Frigate** | Lance le contrôle de détection proposé par l'application pour l'installation Frigate configurée. Utilisez le résultat affiché pour le diagnostic. Un test réussi ne remplace pas un essai avec une véritable détection de caméra. |
+| **Vérifier l'accès « porte » (sans ouvrir)** | Vérifie l'accès à la commande de porte avec les paramètres saisis, sans actionner l'ouverture. C'est la vérification à utiliser avant un essai réel devant le portail. |
+| **Ouvrir le visiophone** | Ouvre le direct vidéo du visiophone dans Dahua TV. Ce bouton ouvre l'écran vidéo, pas la porte. |
+| **Tester le micro** | Ouvre l'essai du microphone disponible sur l'appareil. Il sert à vérifier l'entrée audio locale. Il ne prouve pas à lui seul que l'interphonie avec le visiteur fonctionne. |
+
+![Capture réelle des paramètres, commandes Frigate et accès porte](images/parametres-outils-2.png)
+
+![Capture réelle des paramètres, commandes du visiophone et du micro](images/parametres-outils-3.png)
+
+Les captures montrent les boutons et les indications de l'application. Elles ne montrent pas un résultat de test Frigate ni une ouverture de porte réussie.
+
 ## 6. Autoriser et régler la fenêtre d'appel
 
 Dans **Paramètres > Fenêtre pendant un appel**, cochez **Afficher la vidéo en coin si la TV l'autorise**. Choisissez ensuite **Autoriser la fenêtre** et accordez à Dahua TV l'affichage par-dessus les autres applications dans les réglages du système. Revenez dans Dahua TV, appuyez sur **Tester la fenêtre**, puis faites un vrai appel depuis le VTO.
 
-Sur certains firmwares, l'autorisation affichée comme active ne suffit pas : la fenêtre peut rester bloquée par le système. Dans ce cas, l'alerte peut prendre la forme d'une notification et l'ouverture du direct reste possible depuis Dahua TV. Sur Fire TV, les notifications des applications tierces peuvent être peu visibles ; le test par appel réel reste le plus utile.
+Sur certains firmwares, l'autorisation affichée comme active ne suffit pas : la fenêtre peut rester bloquée par le système. Dans ce cas, l'alerte peut prendre la forme d'une notification et l'ouverture du direct reste possible depuis Dahua TV. Sur Fire TV, les notifications des applications tierces peuvent être peu visibles. Le test par appel réel reste le plus utile.
 
 ## 7. Configurer le NVR et les caméras
 
 Ouvrez **Caméras > Configurer le NVR**. Renseignez l'adresse IP locale du NVR, le port RTSP (souvent `554`), un utilisateur autorisé à lire les caméras et son mot de passe. Saisissez les **cinq numéros de canaux distincts**, séparés par des virgules, puis choisissez **Enregistrer**. Revenez dans **Caméras** et ouvrez chaque canal utile.
 
-Le flux Dahua habituel a la forme `rtsp://ADRESSE_DU_NVR:554/cam/realmonitor?channel=1&subtype=0` ; l'application utilise les identifiants saisis sur la TV. Si votre installation Frigate lit déjà ces canaux du NVR, reprenez les **mêmes numéros de canaux et le même profil RTSP**. Cette configuration ne nécessite pas de publier vos identifiants Frigate. Une connexion directe à l'API Frigate ou des alertes de détection ne sont pas établies par les éléments vérifiés pour ce guide : vérifiez ces fonctions dans votre version avant de les activer.
+Le flux Dahua habituel a la forme `rtsp://ADRESSE_DU_NVR:554/cam/realmonitor?channel=1&subtype=0`. L'application utilise les identifiants saisis sur la TV. Si votre installation Frigate lit déjà ces canaux du NVR, reprenez les **mêmes numéros de canaux et le même profil RTSP**. Cette configuration ne nécessite pas de publier vos identifiants Frigate. Une connexion directe à l'API Frigate ou des alertes de détection ne sont pas établies par les éléments vérifiés pour ce guide : vérifiez ces fonctions dans votre version avant de les activer.
 
 ![Capture réelle de l'onglet Caméras, flux et adresse locale floutés](images/nvr-floute.png)
 
@@ -124,7 +148,7 @@ Si votre installation propose **Ouvrir la porte**, configurez les identifiants v
 
 ## 9. Mettre à jour et résoudre les problèmes courants
 
-Pour une mise à jour, ouvrez de nouveau le [lien de la dernière release](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk), ou reprenez le code Downloader **5492774** sur **Android TV ou Fire TV**. Installez le nouvel APK par-dessus la version existante. Ne désinstallez pas l'application si vous souhaitez conserver ses réglages ; une mise à jour conserve normalement les données lorsque la signature de l'APK reste identique.
+Pour une mise à jour, ouvrez de nouveau le [lien de la dernière release](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk), ou reprenez le code Downloader **5492774** sur **Android TV ou Fire TV**. Installez le nouvel APK par-dessus la version existante. Ne désinstallez pas l'application si vous souhaitez conserver ses réglages. Une mise à jour conserve normalement les données lorsque la signature de l'APK reste identique.
 
 | Symptôme | Vérification utile |
 | --- | --- |
@@ -135,5 +159,5 @@ Pour une mise à jour, ouvrez de nouveau le [lien de la dernière release](https
 | Fenêtre absente | Accordez la superposition à Dahua TV, puis utilisez **Tester la fenêtre** et un appel réel. |
 | Grille saccadée | Essayez un seul canal et un profil vidéo moins exigeant sur le NVR. |
 
-Les essais détaillés et les limites de compatibilité figurent dans [COMPATIBILITE.md](COMPATIBILITE.md). Les captures de Dahua TV de ce guide sont réelles et déjà floutées ; elles ne montrent aucune donnée privée lisible. L'icône de Downloader provient de sa fiche officielle.
+Les essais détaillés et les limites de compatibilité figurent dans [COMPATIBILITE.md](COMPATIBILITE.md). Les captures de Dahua TV de ce guide sont réelles : les vues privées sont floutées et les captures des paramètres ne montrent aucun champ personnel renseigné. L'icône de Downloader provient de sa fiche officielle.
 
