@@ -24,7 +24,13 @@ Les libellés varient selon le constructeur et la version d'Android TV.
 
 1. Dans l'**Appstore Amazon**, recherchez **Downloader** et installez-le.
 2. Ouvrez **Paramètres > Ma Fire TV > Options pour les développeurs > Installer des applications inconnues**, puis autorisez **Downloader**. Selon la version de Fire OS, l'entrée peut se trouver dans **Applications** ou s'appeler **Applications de sources inconnues**. Si **Options pour les développeurs** n'apparaît pas, ouvrez **Ma Fire TV > À propos**, sélectionnez le nom de l'appareil plusieurs fois, puis revenez à l'écran précédent.
-3. Ouvrez Downloader et saisissez le code **5492774**. Vérifiez que la page obtenue mène bien au fichier `DahuaTV.apk` de la [dernière release de ce dépôt](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk).
+3. Ouvrez Downloader et saisissez le code ci-dessous dans son champ de recherche :
+
+   ```text
+   5492774
+   ```
+
+   Validez avec **Go / Aller**. Vérifiez que la page obtenue mène bien au fichier `DahuaTV.apk` de la [dernière release de ce dépôt](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk).
 4. Sélectionnez **Télécharger**, puis **Installer** quand Fire TV le propose. Ouvrez Dahua TV depuis la bibliothèque d'applications.
 
 L'adresse directe est `https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk`. Si le code Downloader ne donne pas le bon fichier, saisissez cette adresse directement. Fire OS doit être une version qui accepte les APK Android ; un appareil sous Vega OS ne convient pas.

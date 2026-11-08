@@ -34,7 +34,19 @@ Les réglages couvrent le compte SIP du portier, le flux RTSP, les identifiants 
 
 ## Installer Dahua TV
 
-Téléchargez [`DahuaTV.apk`](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk). Sur Fire TV Stick, le code **5492774** évite de saisir l'adresse complète dans Downloader. Android TV et Fire TV doivent chacun autoriser l'application qui ouvre l'APK à installer des applications de source inconnue. Le [tutoriel détaillé](INSTALLATION.md) explique les deux parcours et la configuration du portier et des caméras.
+### Fire TV Stick : installation avec Downloader
+
+1. Installez **Downloader** depuis l'Appstore Amazon.
+2. Dans les paramètres du Fire TV Stick, **autorisez Downloader à installer des applications de source inconnue**.
+3. Ouvrez Downloader et saisissez ce code :
+
+```text
+5492774
+```
+
+4. Téléchargez **`DahuaTV.apk`**, puis choisissez **Installer**.
+
+Vous pouvez aussi ouvrir directement [le dernier APK](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk) dans Downloader. Sur Android TV, il faut également autoriser l'application qui ouvre l'APK à installer des applications de source inconnue. Le [tutoriel illustré](INSTALLATION.md) détaille les deux parcours et la configuration du portier et des caméras.
 
 ## Compatibilité et limites
 
