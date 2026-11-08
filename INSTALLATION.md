@@ -90,6 +90,30 @@ Ouvrez **Dahua TV > Paramètres > Connexion SIP**. Le **VTO** est le visiophone 
 
 Sélectionnez **Enregistrer et relancer**. L'état attendu est **« SIP : enregistré sur … »**. Faites ensuite sonner le VTO et vérifiez que l'appel apparaît sur la TV. Un VTH ou un autre client SIP utilisant le même compte peut capter l'appel à la place de Dahua TV : si cela arrive, vérifiez les comptes et les limites de sessions de votre visiophone.
 
+### Retrouver le serveur SIP dans le VTH
+
+Les captures suivantes montrent le parcours dans l'interface Web d'un VTH Dahua. Connectez-vous à votre propre VTH avec les identifiants de votre installation. Les champs sont vides sur cette capture de la page de connexion.
+
+![Page de connexion réelle à l'interface Web du VTH](images/VTH-A.png)
+
+Après la connexion, ouvrez **RÉSEAU**, puis **Serveur SIP**. Le menu du VTH permet aussi d'accéder aux réglages de l'appareil local.
+
+![Menu réel de configuration du VTH](images/VTH-B.png)
+
+Sur la page **Serveur SIP**, relevez le type de serveur, son adresse, le port, le domaine et les informations du compte qui correspondent à votre installation. La capture ci-dessous montre où se trouvent ces champs. Son adresse et ses noms d'utilisateur sont masqués. Ne recopiez pas les valeurs d'exemple dans Dahua TV.
+
+![Page réelle du serveur SIP dans le VTH, données privées masquées](images/VTH-C.png)
+
+### Vérifier l'état et la configuration du VTH
+
+Dans la liste des appareils du visiophone, le VTH peut apparaître **« Hors ligne »**, comme sur cette capture. Cet état concerne le VTH affiché, pas directement l'enregistrement SIP de Dahua TV. Vérifiez d'abord que le moniteur est allumé et connecté au réseau, puis contrôlez son enregistrement et ses paramètres sur votre installation.
+
+![VTH indiqué hors ligne dans la liste des appareils, numéro masqué](images/VTH-D.png)
+
+L'icône de modification ouvre la fiche du VTH. Vous y retrouvez notamment le numéro du moniteur, le mode d'enregistrement et le mot de passe d'inscription. La capture montre les emplacements des champs, avec le numéro masqué. Ne modifiez ces valeurs que si vous connaissez la configuration de votre installation, puis refaites un appel réel depuis le VTO pour vérifier la réception sur le moniteur et sur Dahua TV.
+
+![Fiche réelle de configuration du VTH, numéro masqué](images/VTH-E.png)
+
 ## 5. Renseigner la vidéo RTSP du VTO
 
 Dans **Paramètres > Vidéo**, renseignez l'adresse RTSP et les identifiants vidéo du visiophone. Le bouton **Préparer l'adresse Dahua** construit une adresse du type :
