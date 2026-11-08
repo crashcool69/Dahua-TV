@@ -70,9 +70,7 @@ Si Downloader revient sur son écran après l'installation, vous pouvez supprime
 
 ### Étape 5 — Vérifier le résultat
 
-Au premier lancement, suivez les sections 4 à 8 ci-dessous pour régler le visiophone, la vidéo et la fenêtre d'appel. Faites ensuite un appel réel depuis le VTO. Voici le résultat sur le Fire TV Stick testé, **après installation et configuration**. La vue du visiophone est floutée. Cette image montre Dahua TV en fonctionnement, pas l'interface de Downloader.
-
-![Fenêtre d'appel réelle sur Fire TV Stick, vue privée floutée](images/fire-tv-appel-4s-floute.png)
+Au premier lancement, suivez les sections 4 à 8 ci-dessous pour régler le visiophone, la vidéo et la fenêtre d'appel. Faites ensuite un appel réel depuis le VTO. Les [réglages de la petite fenêtre et une capture du résultat](#fenetre-appel) sont regroupés dans la section 6.
 
 ## Choisir la langue
 
@@ -115,8 +113,8 @@ Dans **Paramètres**, le panneau **Outils > Vidéo et diagnostics** rassemble le
 | Bouton | À quoi il sert |
 | --- | --- |
 | **Préparer l'adresse Dahua** | Remplit le champ RTSP avec une adresse Dahua type, à partir de l'adresse du visiophone. Vérifiez le port, le canal et le sous-flux, puis choisissez **Enregistrer et relancer** : préparer l'adresse ne l'enregistre pas à lui seul. |
-| **Autoriser la fenêtre** | Ouvre le réglage Android ou Fire OS qui permet à Dahua TV d'afficher la vidéo par-dessus les autres applications. Accordez l'autorisation sur cet écran système, puis revenez dans Dahua TV. |
-| **Tester la fenêtre** | Affiche une fenêtre d'essai, ou le dernier instantané disponible, sans attendre un appel. Ce test vérifie l'affichage. Faites ensuite un appel réel pour contrôler la réception SIP et la vidéo. |
+| **Autoriser la fenêtre** | Ouvre le réglage du système pour l'affichage par-dessus les autres applications. Le parcours complet est dans la [section sur la fenêtre d'appel](#fenetre-appel). |
+| **Tester la fenêtre** | Affiche une fenêtre d'essai, ou le dernier instantané disponible, sans attendre un appel. Le test complet est décrit dans la [section sur la fenêtre d'appel](#fenetre-appel). |
 | **Tester la détection Frigate** | Lance le contrôle de détection proposé par l'application pour l'installation Frigate configurée. Utilisez le résultat affiché pour le diagnostic. Un test réussi ne remplace pas un essai avec une véritable détection de caméra. |
 | **Vérifier l'accès « porte » (sans ouvrir)** | Vérifie l'accès à la commande de porte avec les paramètres saisis, sans actionner l'ouverture. C'est la vérification à utiliser avant un essai réel devant le portail. |
 | **Ouvrir le visiophone** | Ouvre le direct vidéo du visiophone dans Dahua TV. Ce bouton ouvre l'écran vidéo, pas la porte. |
@@ -128,11 +126,28 @@ Dans **Paramètres**, le panneau **Outils > Vidéo et diagnostics** rassemble le
 
 Les captures montrent les boutons et les indications de l'application. Elles ne montrent pas un résultat de test Frigate ni une ouverture de porte réussie.
 
-## 6. Autoriser et régler la fenêtre d'appel
+<a id="fenetre-appel"></a>
 
-Dans **Paramètres > Fenêtre pendant un appel**, cochez **Afficher la vidéo en coin si la TV l'autorise**. Choisissez ensuite **Autoriser la fenêtre** et accordez à Dahua TV l'affichage par-dessus les autres applications dans les réglages du système. Revenez dans Dahua TV, appuyez sur **Tester la fenêtre**, puis faites un vrai appel depuis le VTO.
+## 6. Régler et tester la petite fenêtre d'appel
 
-Sur certains firmwares, l'autorisation affichée comme active ne suffit pas : la fenêtre peut rester bloquée par le système. Dans ce cas, l'alerte peut prendre la forme d'une notification et l'ouverture du direct reste possible depuis Dahua TV. Sur Fire TV, les notifications des applications tierces peuvent être peu visibles. Le test par appel réel reste le plus utile.
+Dans **Paramètres > Fenêtre pendant un appel**, activez **Afficher la vidéo en coin si la TV l'autorise**. La petite fenêtre pourra alors montrer le visiophone au-dessus de l'application en cours lorsqu'un appel arrive. Il faut aussi autoriser cet affichage dans les réglages d'Android TV ou de Fire TV.
+
+![Capture réelle des paramètres de la fenêtre d'appel et de ses options](images/parametres-fenetre-2.png)
+
+Les deux autres cases règlent le comportement pendant un appel :
+
+- **Garder la caméra connectée pour un affichage immédiat** maintient le flux vidéo du visiophone. L'image arrive plus vite à l'appel, mais cette connexion peut occuper la session vidéo dont une autre application a besoin. Si l'image disparaît sur votre téléphone ou si le visiophone limite les connexions, désactivez cette option. Sans elle, l'image peut prendre quelques secondes à apparaître.
+- **Entendre le visiteur pendant un appel** active le son du visiteur lorsque l'appel est affiché. Le son ne joue pas pendant la veille. Cette option ne garantit pas que vous pourrez parler au visiteur, ce qui doit être vérifié séparément.
+
+Choisissez ensuite le **coin** de l'écran (haut gauche, haut droit, bas gauche ou bas droit), la **taille** (petite, moyenne ou grande) et la **durée d'affichage** pendant un appel (10, 20, 30, 45 ou 60 secondes). Ces choix s'appliquent dès leur sélection. La capture montre un exemple avec une fenêtre en haut à gauche, de taille moyenne et affichée pendant 20 secondes. Vous pouvez choisir d'autres valeurs.
+
+![Capture réelle du choix du coin, de la taille et de la durée de la fenêtre](images/parametres-fenetre-1.png)
+
+Pour terminer, choisissez **Autoriser la fenêtre** dans le panneau **Vidéo et diagnostics**. Accordez à Dahua TV l'affichage par-dessus les autres applications sur l'écran du système, puis revenez dans l'application. Appuyez sur **Tester la fenêtre** pour voir une fenêtre d'essai ou le dernier instantané sans attendre un appel. Faites ensuite un **appel réel depuis le VTO** pour vérifier ensemble la réception SIP, la vidéo et le son.
+
+Sur certains appareils, le système peut bloquer la fenêtre même si son autorisation semble active. Une notification peut alors remplacer l'image en coin, et le direct reste accessible dans Dahua TV. Sur Fire TV, les notifications des applications tierces peuvent être peu visibles. Voici la fenêtre en fonctionnement sur le Fire TV Stick testé, après configuration. La vue privée du visiophone est floutée.
+
+![Fenêtre d'appel réelle sur Fire TV Stick, vue privée floutée](images/fire-tv-appel-4s-floute.png)
 
 ## 7. Configurer le NVR et les caméras
 
