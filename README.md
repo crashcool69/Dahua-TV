@@ -16,7 +16,7 @@ L'accueil réunit le direct du visiophone, l'état de la surveillance SIP et les
 
 L'application a aussi été testée directement sur une **TCL Smart TV Pro sous Android TV 12**. Voici son interface d'accueil sur la télévision, avec les informations privées masquées. Elle se pilote entièrement à la télécommande : accès au visiophone, état de la connexion SIP, caméras et paramètres.
 
-![Dahua TV sur une télévision TCL Android TV — capture réelle de l'application](images/accueil-floute.png)
+![Dahua TV sur une télévision TCL Android TV — capture réelle de l'application](images/android-tv-accueil.png)
 
 Sur Android TV, l'application permet également de recevoir les appels du VTO dans une fenêtre flottante et de consulter les caméras du NVR, y compris la grille de quatre flux.
 
