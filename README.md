@@ -6,6 +6,8 @@
 
 [Installer avec Downloader](#installer-avec-downloader-sur-android-tv-et-fire-tv-stick) · [Télécharger le dernier APK](https://github.com/crashcool69/Dahua-TV/releases/latest/download/DahuaTV.apk) · [Lire le guide d'installation](INSTALLATION.md) · [Voir la compatibilité](COMPATIBILITE.md)
 
+**Nouveautés de la version 0.5** — la refonte graphique, les sources vidéo, la supervision, le portail et la mise à jour intégrée : [lire la note de version](NOUVEAUTES-0.5.md).
+
 ## Découvrir l'application
 
 L'accueil réunit le direct du visiophone, l'état de la surveillance SIP et les commandes principales. Lorsqu'un appel arrive, une petite fenêtre vidéo peut apparaître au-dessus de l'écran en cours, à condition que l'appareil autorise l'affichage par-dessus les autres applications.
